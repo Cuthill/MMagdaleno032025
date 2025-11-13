@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(81, 79, 79);
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+.container {
+  max-width: 75rem;
+  min-height: 10rem;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#pageheader {
+  background-color: rgb(255, 255, 255);
+  min-height: 10rem;
+  padding: 0.25rem;
+  color: rgb(255, 255, 255);
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+#logo {
+  background-image: url(images/babbaba.jpg);
+  width: 8.25rem;
+  height: 6.25rem;
+  border: 1px solid none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#pageheader .container {
+  background-color: rgb(1, 2, 11);
+  min-height: auto;
+}
+
+#pageheader nav {
+  text-align: center;
+}
+
+#blockquote {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+span {
+  background-color: rgb(182, 123, 205);
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  background-color: rgb(255, 255, 255);
+}
+
+#media {
+  background-color: rgb(255, 255, 255);
+  min-height: 10rem;
+  padding: 1rem;
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+#career {
+  background-color: rgb(255, 255, 255);
+  min-height: 10rem;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+#pagecontent {
+  background-color: rgb(0, 0, 0);
+  min-height: 10rem;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  width: 80%;
+}
+
+#semester1 {
+  background-color: rgb(255, 255, 255);
+  min-height: 10rem;
+  padding: 1rem;
+  color: white;
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+#semester2 {
+  background-color: rgb(81, 79, 79);
+  min-height: 10rem;
+  padding: 1rem;
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+#pagefooter {
+  background-color: rgb(255, 255, 255);
+  min-height: 10rem;
+  padding: 1rem;
+  color: black;
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+#pagefooter .container {
+  text-align: center;
+  min-height: auto;
+}
+
+a {
+  color: black;
+}
+
+#subfooter {
+  background-color: #452068;
+  min-height: 10rem;
+  padding: 1rem;
+  background-image: url(images/blackpanterlol.jpg);
+}
+
+audio {
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  display: block;
+  margin: auto;
+  width: 40%;
+  border-radius: 10px;
+}

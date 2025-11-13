@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  color: lime;
+  font-family: "courier new", courier, monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+dd{
+  padding: 1rem;
+}
+
+p{
+  width: 80%;
+  background-color: white;
+  margin:1rem auto;
+  padding: 1rem;
+  border: 2px solid silver;
+
+}
+
+ul{
+  width: 70%;
+  padding: 1rem;
+  margin: auto;
+  border: 2px solid silver;
+  padding-left: 4rem;
+}

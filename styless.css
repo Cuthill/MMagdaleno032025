@@ -40,6 +40,16 @@ body {
   background-color: rgb(1, 2, 11);
   min-height: auto;
 }
+#aifooter {
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  min-height: auto;
+}
+
+#aifooter .container {
+  text-align: center;
+  min-height: auto;
+}
 
 #pageheader nav {
   text-align: center;

@@ -55,7 +55,25 @@ body {
   text-align: center;
 }
 
-#blockquote {
+#pageheader nav ul {
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 0;
+}
+
+#pageheader nav ul li {
+  margin: 2px;
+  padding: 1rem;
+  border: 2px solid black;
+  background-color: aliceblue;
+}
+
+#pageheader nav ul :hover {
+  background-color: rgb(123, 126, 190);
+}
+
+blockquote {
   background-color: rgb(255, 255, 255);
   padding: 1rem;
   width: 50%;
@@ -63,10 +81,12 @@ body {
   font-size: 1.25rem;
 }
 
-span {
+blockquote + span {
   background-color: rgb(182, 123, 205);
-  text-align: left;
-  color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 
 p {
@@ -149,4 +169,31 @@ audio {
   margin: auto;
   width: 40%;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 650px) {
+  #pageheader nav ul {
+    margin-top: 2rem;
+  }
+  #pageheader nav ul {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  #pageheader nav ul li {
+    display: inline-block;
+  }
+
+  #pagecontent {
+    background-color: rgb(81, 79, 79);
+  }
+  #media {
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #pagecontent {
+    background-color: rgb(81, 79, 79);
+  }
+  #media {
+  }
 }

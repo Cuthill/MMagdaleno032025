@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://masonalexa.netlify.app/semester2/photogallery/photogallery -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Photo Gallery</title>
+  <script>
+				if (typeof fetchPatch == 'undefined') {
+					const fetchPatch = () => {
+						const {fetch: origFetch} = window;
+						window.fetch = async (...args) => {
+							const response = await origFetch(...args);
+							response
+								.clone()
+								.text()
+								.then(body => {
+									if (args[0].url.indexOf('/youtubei/v1/player?') > -1) {
+										const domain = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
+										window.postMessage({ type: 'YOUTUBE_PLAYER_CALL', payload: {responsebody: body, url: window.location.href }}, domain);
+										lastVideoUrl = window.location.href;
+									} else if (args[0].url.indexOf('/youtubei/v1/next?') > -1) {
+										const domain = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
+										window.postMessage({ type: 'YOUTUBE_NEXT_CALL', payload: {responsebody: body, url: window.location.href }}, domain);
+										lastVideoNextUrl = window.location.href;
+									} else if (args[0].url.indexOf('/youtubei/v1/browse?') > -1) {
+										const domain = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
+										window.postMessage({ type: 'YOUTUBE_BROWSE_CALL', payload: {responsebody: body, url: window.location.href }}, domain);
+										lastChannelUrl = window.location.href;
+									}
+								})
+								.catch(err => {});
+							return response;
+						};
+					};
+					fetchPatch();
+				}</script><link rel="stylesheet" href="chrome-extension://iheobagjkfklnlikgihanlhcddjoihkg/fonts/Metropolis.css"></head>
+  <body>
+    <h1>Flexbox Photo Gallery</h1>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .gallery {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        width: 90%;
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      figure {
+        background-color: lightblue;
+        width: 100%;
+        max-width: 250px;
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      figcaption {
+        background-color: white;
+        color: #333;
+        padding: 0.5rem;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+      }
+    </style>
+
+    <div class="gallery">
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/204-300x300.jpg" alt="Random Picsum 
+    Image">
+        <figcaption>Description</figcaption>
+      </figure>
+
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/902-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/584-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/852-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/1068-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/71-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/594-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/163-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/258-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/1033-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/686-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+      <figure>
+        <img src="./masonmagdaleno - Flexbox Photo Gallery .pdf_files/58-300x300.jpg" alt="Random Picsum 
+      Image">
+        <figcaption>Description</figcaption>
+      </figure>
+    </div>
+  
+
+</body></html>

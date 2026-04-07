@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      /* Mobile First Design */
+      body {
+        background-color: purple;
+      }
+
+      h1,
+      h2 {
+        color: white;
+      }
+
+      @media screen and (min-width: 700px) {
+        body {
+          background-color: blue;
+        }
+
+        h1,
+        h2 {
+          color: black;
+        }
+      }
+
+      @media screen and (min-width: 960px) {
+        body {
+          background-color: green;
+        }
+
+        h1,
+        h2 {
+          color: white;
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        body {
+          background-color: red;
+        }
+
+        h1,
+        h2 {
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <h2>Mason Magdaleno</h2>
+  </body>
+</html>

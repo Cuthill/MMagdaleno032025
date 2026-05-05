@@ -20,14 +20,19 @@ body {
   max-width: 75rem;
   min-height: 10rem;
   margin: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   padding: 1rem;
   border-radius: 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#topnav {
+  background-color: black;
+  color: white;
 }
 
 #pageheader {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   min-height: 10rem;
   padding: 0.25rem;
   color: rgb(255, 255, 255);
@@ -48,13 +53,15 @@ body {
 }
 
 #pageheader .container {
-  background-color: rgb(1, 2, 11);
+  background-color: rgb(0, 0, 0);
   min-height: auto;
+  color: white;
 }
 #aifooter {
   padding: 1rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   min-height: auto;
+  color: white;
 }
 
 #aifooter .container {
@@ -64,11 +71,12 @@ body {
 
 #pageheader nav {
   text-align: center;
+  background-color: black;
 }
 
 #pageheader nav ul {
   list-style-type: none;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   padding: 1rem;
   margin: 0;
 }
@@ -77,15 +85,16 @@ body {
   margin: 2px;
   padding: 1rem;
   border: 2px solid black;
-  background-color: aliceblue;
+  background-color: rgb(0, 0, 0);
+  color: black;
 }
 
 #pageheader nav ul :hover {
-  background-color: rgb(123, 126, 190);
+  background-color: rgb(0, 0, 0);
 }
 
 blockquote {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0, 0.5);
   padding: 1rem;
   width: 50%;
   margin: 0 auto;
@@ -101,23 +110,27 @@ blockquote + span {
 }
 
 p {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.5rem;
 }
 
 #media {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   min-height: 40rem;
   max-width: 75rem;
   padding: 1rem;
-  background-image: url(images/ryuk.gif);
+  background-image:
+    linear-gradient(rgba(116, 19, 19, 0.47), rgba(0, 0, 0, 0.3)),
+    url(images/ryuk.gif);
   background-size: cover;
   background-position: center;
   margin: auto;
   border-radius: 15px;
+  color: white;
 }
 
 #career {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   min-height: 10rem;
   padding: 1rem;
   color: rgb(255, 255, 255);
@@ -138,23 +151,24 @@ iframe {
 }
 
 #semester1 {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   min-height: 10rem;
   padding: 1rem;
   color: white;
 }
 
 #semester2 {
-  background-color: rgb(81, 79, 79);
+  background-color: rgb(0, 0, 0);
   min-height: 10rem;
   padding: 1rem;
+  color: white;
 }
 
 #pagefooter {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   min-height: 10rem;
   padding: 1rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #pagefooter .container {
@@ -163,11 +177,11 @@ iframe {
 }
 
 a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #subfooter {
-  background-color: #452068;
+  background-color: #000000;
   min-height: 10rem;
   padding: 1rem;
 }
@@ -200,7 +214,7 @@ audio {
   }
 
   #pagecontent {
-    background-color: rgb(81, 79, 79);
+    background-color: rgb(0, 0, 0);
   }
   #media {
   }
@@ -208,7 +222,7 @@ audio {
 /* Desktop view */
 @media screen and (min-width: 1000px) {
   #pagecontent {
-    background-color: rgb(81, 79, 79);
+    background-color: rgb(0, 0, 0);
   }
   #media {
   }
@@ -224,9 +238,8 @@ audio {
 
 /* // <uniquifier>: Use a unique and descriptive class name */
 
-.honk-barf {
-  font-family: "Honk", system-ui;
-  font-optical-sizing: auto;
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

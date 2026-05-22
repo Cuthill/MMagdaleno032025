@@ -164,6 +164,28 @@ iframe {
   color: white;
 }
 
+#worksamples {
+  background-color: rgb(0, 0, 0);
+  min-height: 10rem;
+  padding: 1rem;
+  color: white;
+}
+
+#certificates {
+  background-color: rgb(0, 0, 0);
+  min-height: 10rem;
+  padding: 1rem;
+  color: white;
+}
+
+#certificates ul {
+  list-style-type: none;
+}
+
+#certficates li {
+  color: white;
+}
+
 #pagefooter {
   background-color: rgb(0, 0, 0);
   min-height: 10rem;
